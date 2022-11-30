@@ -1,15 +1,9 @@
 package com.demo;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class Even_pos {
-	public static void evenPos(int[] a, int size)
-	{
-		for(int i=1; i<a.length;i+=2)
-		{
-			System.out.println(a[i]);
-		}
-	}
+public class third_largest {
 
 	public static void main(String[] args) {
 		System.out.println("enter the size of the array");
@@ -27,7 +21,13 @@ public class Even_pos {
           System.out.println(a[i]);
       }
       System.out.println("no. of elemnts present in array is:" + size);
-      evenPos(a,size);
+      Arrays.sort(a);
+      System.out.println(" array after sorted");
+      for(int i=0; i<size;i++)
+      {
+    	  System.out.println(a[i]);
+      }
+    System.out.println("largest 3 element is:" + a[2]);
 	}
 
 }

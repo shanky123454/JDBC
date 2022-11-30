@@ -2,12 +2,26 @@ package com.demo;
 
 import java.util.Scanner;
 
-public class Even_pos {
-	public static void evenPos(int[] a, int size)
+public class desceding {
+	public static void desc(int[] b, int size)
 	{
-		for(int i=1; i<a.length;i+=2)
+		int temp=0;
+		//int max = b[0];
+		for(int i=0; i<b.length; i++)
 		{
-			System.out.println(a[i]);
+			for(int j=i+1; j<b.length;j++)
+			{
+			if(b[j]> b[i])
+			  {
+				temp=b[i];
+				b[i]=b[j];
+				b[j]= temp;
+			  }
+		    }
+	    }
+		for(int j=0; j<b.length;j++)
+		{
+			System.out.println(b[j]);
 		}
 	}
 
@@ -27,7 +41,7 @@ public class Even_pos {
           System.out.println(a[i]);
       }
       System.out.println("no. of elemnts present in array is:" + size);
-      evenPos(a,size);
+      desc(a,size);
 	}
 
 }

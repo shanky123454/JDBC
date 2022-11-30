@@ -2,12 +2,22 @@ package com.demo;
 
 import java.util.Scanner;
 
-public class Even_pos {
-	public static void evenPos(int[] a, int size)
+public class left_rotate {
+	public static void l_rotate(int[] b , int size,int n)
 	{
-		for(int i=1; i<a.length;i+=2)
+		int i,j=0;
+		for(i=0;i<n;i++)
 		{
-			System.out.println(a[i]);
+			int temp= b[0];
+			for( j=0; j<size-1;j++)
+			{
+				b[j]= b[j+1];
+			}
+			b[j]=temp;
+		}
+		for(i=0;i<size;i++)
+		{
+			System.out.println(b[i]);
 		}
 	}
 
@@ -27,7 +37,9 @@ public class Even_pos {
           System.out.println(a[i]);
       }
       System.out.println("no. of elemnts present in array is:" + size);
-      evenPos(a,size);
+      System.out.println("enter the no of times to rotate the array\n");
+      int n = sc.nextInt();
+      l_rotate(a,size,n);
 	}
 
 }

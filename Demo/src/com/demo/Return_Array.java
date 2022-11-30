@@ -46,7 +46,7 @@ public class Return_Array {
           System.out.println(a[i]);
       }
       System.out.println();
-      int[] arr = new int[size] ;
+      int[] arr = new int[2] ;
      int [] c= frequencycount(a,size);
      for(int l=0; l<c.length; l++)
      {
