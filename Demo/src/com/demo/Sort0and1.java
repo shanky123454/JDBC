@@ -1,12 +1,11 @@
 package com.demo;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Sort0and1 {
 			public static void sort(int[] b, int size)
 			{
-				/*int i=0;
+				int i=0;
 				int j= size-1;
 					while(i<j)
 					{
@@ -32,15 +31,15 @@ public class Sort0and1 {
 					for(int k=0; k<size;k++)
 					{
 				System.out.println(b[k]);
-					}*/
+					}
 					
-				int i=0;
+				/*int i=0;
 				Arrays.sort(b);
 				System.out.println("array after sorting 0&1");
 				for(i=0; i<size;i++)
 				{
 				System.out.println(b[i]);
-				}
+				}*/
 			}
 		
 			
