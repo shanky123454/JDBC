@@ -29,16 +29,12 @@
     
     
     
-    
-    
      <bean id="emp" class="autowiringUsingXML.Emp" autowire="byType"/>
     
     <bean id="address" class="autowiringUsingXML.Address">
      <property name="road" value="varthur main road"/>
      <property name="city" value="bangalore"/>
     </bean>
-    
-    
     
     
     

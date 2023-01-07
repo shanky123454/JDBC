@@ -9,6 +9,14 @@
     
   
  <context:annotation-config></context:annotation-config>
+ 
+  <bean id="emp" class="AutowiringUsingAnnotation.Emp"/>
+    
+  
+  <bean id="address" class="AutowiringUsingAnnotation.Address" name="address">
+  <property name="road" value="varthur main road"/>
+   <property name="city" value="bangalore"/>
+  </bean>
   
   
 </beans>
