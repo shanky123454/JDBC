@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:annotation-config></context:annotation-config>
+    <!-- Define your beans here -->
+    <bean id="quadilateral" class="springdemo1.Quadilateral">
+    <!--  init-method="init"
+    destroy-method="destroy"> -->
+        <property name="pointa" ref="point11"/>
+        <property name="pointb" ref="point21"/>
+        <property name="pointc" ref="point31"/>
+        <property name="pointd" ref="point41"/>
+                
+    </bean>
+    
+    <bean id="point11" class="springdemo1.point">
+    <property name="x" value="0"/>
+    <property name="y" value="0"/>
+    </bean>
+    
+    
+    <bean id="point21" class="springdemo1.point">
+    <property name="x" value="-20"/>
+    <property name="y" value="0"/>
+    </bean>
+    
+   
+    <bean id="point31" class="springdemo1.point">
+    <property name="x" value="20"/>
+    <property name="y" value="0"/>
+    </bean>
+    
+    <bean id="point41" class="springdemo1.point">
+    <property name="x" value="30"/>
+    <property name="y" value="10"/>
+    </bean>
+   
+    <bean id ="triangle"  class="springdemo1.Triangle">
+  <!--   init-method="init"
+    destroy-method="destroy">--> 
+   <!-- <property name="type"  value="equilateral" >
+    </property> 
+    <constructor-arg value="equilateral"/>-->
+    <constructor-arg type="java.lang.String" value="equilateral"/>
+    <constructor-arg type="int" value ="20"/>
+   <!--   <property name="pointa" ref="point1"/>
+        <property name="pointb" ref="point2"/>
+        <property name="pointc" ref="point3"/> -->
+      <property name="points">
+      <list>
+          <ref bean = "point1"/>
+          <ref bean = "point2"/>
+          <ref bean = "point3"/>
+      </list>
+      </property>  
+        
+    
+    
+   <!--   <constructor-arg index="0" value="equilateral"/>
+    <constructor-arg index="1" value="equilateral"/> -->
+    </bean>
+    <bean id="point1" class="springdemo1.point">
+    <property name="x" value="0"/>
+    <property name="y" value="0"/>
+    </bean>
+    
+    
+    <bean id="point2" class="springdemo1.point">
+    <property name="x" value="-20"/>
+    <property name="y" value="0"/>
+    </bean>
+    
+   
+    <bean id="point3" class="springdemo1.point">
+    <property name="x" value="20"/>
+        <property name="y" value="0"/>
+    </bean>
+    
+</beans>
+
+
+
+
+
