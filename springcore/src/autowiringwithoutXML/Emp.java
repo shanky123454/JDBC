@@ -1,19 +1,17 @@
-package AutowiringUsingAnnotation;
+package autowiringwithoutXML;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
-
-
+@Component
 public class Emp {
-   @Autowired
-  // @Qualifier("address2")
+  
+
 	public Address address;
 
 	public Address getAddress() {
 		return address;
 	}
-//@Autowired
+
 	public Emp(Address address) {
 		this.address = address;
 	}
@@ -22,7 +20,7 @@ public class Emp {
 	public String toString() {
 		return "emp [address=" + address + "]";
 	}
-//@Autowired
+
 	public void setAddress(Address address) {
 		this.address = address;
 	}
