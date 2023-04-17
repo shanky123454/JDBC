@@ -14,7 +14,7 @@ public class Util {
 	//establishing the connection
 	public static Connection  getconnection() throws SQLException, IOException{
 		
-		FileInputStream fis = new FileInputStream("C:\\Users\\ASUS\\git\\repository\\jdbc demo\\application.properties");
+		FileInputStream fis = new FileInputStream("application.properties");
 		Properties pro = new Properties();
 		pro.load(fis);
 	   	String url = pro.getProperty("url");

@@ -6,7 +6,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jdbc_library"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ioutils"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jdbc_library"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hikari"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/xsls"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

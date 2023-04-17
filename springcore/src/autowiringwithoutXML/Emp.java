@@ -11,6 +11,7 @@ public class Emp {
 	public Address getAddress() {
 		return address;
 	}
+	
 
 	public Emp(Address address) {
 		this.address = address;

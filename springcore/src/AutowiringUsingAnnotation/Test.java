@@ -9,5 +9,7 @@ public class Test {
 		Emp e1 = context.getBean("emp", Emp.class);
 		System.out.println(e1);
 	}
+	
 
 }
+

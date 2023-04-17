@@ -3,9 +3,10 @@ package autowiringwithoutXML;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 @Component
+
 public class Address {
 
-	@Value("varthur main road")
+    @Value("varthur main road")
 	public String road;
 	
 	@Value("bangalore")
@@ -28,3 +29,4 @@ public class Address {
 		this.city = city;
 	}
 }
+

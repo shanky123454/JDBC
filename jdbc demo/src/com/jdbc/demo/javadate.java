@@ -30,11 +30,11 @@ public static void main(String[] args)
 		if(pstmt!=null)
 		{
 			
-		System.out.println("enter the D.O.B : (MM-dd-yyyy)");
+		System.out.println("enter the D.O.B : (yyyy-MM-dd)");
 	    String date = sc.next();
 	    if(date!=null)
 	    {
-	    SimpleDateFormat sdf= new SimpleDateFormat("MM-dd-yyyy");
+	    SimpleDateFormat sdf= new SimpleDateFormat("yyyy-MM-dd");
 			java.util.Date d = sdf.parse(date);
 			long l = d.getTime();
 	     dateu  = new java.sql.Date(l);

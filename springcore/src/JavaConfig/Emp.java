@@ -1,21 +1,23 @@
 package JavaConfig;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-//@Component("getDetails")
+@Component("emp")
 public class Emp {
 	
+	@Autowired
 	public Samosa samosa;
 
-	public Samosa getSamosa() {
-		return samosa;
-	}
-	public void setSamosa(Samosa samosa) {
-		this.samosa = samosa;
-	}
-	public Emp( Samosa samosa,String name, String city) {
+//	public Samosa getSamosa() {
+//		return samosa;
+//	}
+//	public void setSamosa(Samosa samosa) {
+//		this.samosa = samosa;
+//	}
+	public Emp( String name, String city) {
 		
-		this.samosa = samosa;
+		///this.samosa = samosa;
 		this.name = name;
 		this.city = city;
 	}

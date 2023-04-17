@@ -20,7 +20,7 @@ public class jdbc4 {
 	       System.out.println("connection get establish");
 	       System.out.println(connection.getClass().getName());
 
-	       String sqlquery = "update student_info set id=2 where id=4";
+	       String sqlquery = "update student_info set id=3 where id=5";
 	       Statement statement = connection.createStatement();
 	       int roweffected = statement.executeUpdate(sqlquery);
 
@@ -28,7 +28,7 @@ public class jdbc4 {
 	      
 	      System.out.println("=================================================");
 	      
-	      String sqlquery1 = "update student_info set id=1 where id=8";
+	      String sqlquery1 = "update student_info set id=4 where id=6";
 	      int roweffected1 = statement.executeUpdate(sqlquery1);
 	      System.out.println("no of row effected =" + roweffected1);
 
